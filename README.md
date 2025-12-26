@@ -6,7 +6,7 @@ It is intended as a **reference installation guide**, derived from the
 official GPGPU-Sim documentation, with missing but essential steps added
 for clarity and reproducibility.
 
-Official GPGPU-Sim source repository (reference used):\
+Official GPGPU-Sim source repository :\
 👉 https://github.com/gpgpu-sim/gpgpu-sim_distribution
 
 ------------------------------------------------------------------------
@@ -175,8 +175,3 @@ documentation:
 
 ------------------------------------------------------------------------
 
-This README intentionally excludes: - Sample programs - Benchmarks -
-Execution workflows
-
-Those are expected to be documented separately per project or
-experiment.
