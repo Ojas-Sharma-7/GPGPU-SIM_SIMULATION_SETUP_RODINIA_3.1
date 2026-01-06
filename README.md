@@ -1,4 +1,4 @@
-# 🚀 GPGPU-Sim Installation Guide
+## GPGPU-Sim Installation Guide
 
 This repository documents the **installation and setup procedure for
 GPGPU-Sim** on a Linux system.\
@@ -7,19 +7,17 @@ official GPGPU-Sim documentation, with missing but essential steps added
 for clarity and reproducibility.
 
 Official GPGPU-Sim source repository :\
-👉 https://github.com/gpgpu-sim/gpgpu-sim_distribution
+ https://github.com/gpgpu-sim/gpgpu-sim_distribution
 
 ------------------------------------------------------------------------
 
-## 🧠 About GPGPU-Sim
+## About GPGPU-Sim
 
 GPGPU-Sim is a cycle-level simulator for modern NVIDIA-like GPU
 architectures.\
 It enables detailed analysis of GPU microarchitecture, memory systems,
 caches, and execution pipelines without requiring physical GPU hardware.
 
-This README **only covers installation and environment setup**.\
-Sample programs and benchmark execution are intentionally excluded.
 
 ------------------------------------------------------------------------
 
@@ -27,14 +25,14 @@ Sample programs and benchmark execution are intentionally excluded.
 
 -   **Linux OS** (Ubuntu 18.04 / 20.04 / 22.04 recommended)
 -   NVIDIA CUDA Toolkit (version compatible with GPGPU-Sim)
--   GCC / G++ compiler
+-   GCC / G++ compiler (may throw some error with gcc 9 , try to use 8 or lower version)
 -   GNU Make and standard development tools
 
-> ⚠️ GPGPU-Sim is not supported on Windows or macOS.
+>  GPGPU-Sim is not supported on Windows or macOS.
 
 ------------------------------------------------------------------------
 
-## 📦 Install Required Dependencies (Ubuntu/Debian)
+## Install Required Dependencies (Ubuntu/Debian)
 
 Install all required system packages:
 
@@ -48,7 +46,7 @@ OpenGL-based visualization support - Compression and trace handling
 
 ------------------------------------------------------------------------
 
-## 📥 Download GPGPU-Sim
+##  Download GPGPU-Sim
 
 Clone the official distribution repository:
 
@@ -59,7 +57,7 @@ cd gpgpu-sim_distribution
 
 ------------------------------------------------------------------------
 
-## ⚙️ CUDA Toolkit Setup (CRITICAL STEP)
+## CUDA Toolkit Setup (CRITICAL STEP)
 
 Ensure the CUDA Toolkit is installed on your system.
 
@@ -75,7 +73,7 @@ nvcc --version
 
 ------------------------------------------------------------------------
 
-### 🔹 Temporary CUDA Environment (Current Terminal Only)
+###  Temporary CUDA Environment (Current Terminal Only)
 
 ``` bash
 export CUDA_INSTALL_PATH=/usr/local/cuda
@@ -119,7 +117,7 @@ nvcc --version
 
 ------------------------------------------------------------------------
 
-## 🏗️ Build GPGPU-Sim
+##  Build GPGPU-Sim
 
 Before building, source the GPGPU-Sim environment script:
 
@@ -147,7 +145,7 @@ make -j$(nproc)
 
 ------------------------------------------------------------------------
 
-## ✅ Installation Verification
+##  Installation Verification
 
 A successful build will generate: - `libcuda.so` replacement libraries -
 Simulator binaries - Configuration support files
@@ -156,7 +154,7 @@ No runtime execution is required at this stage to validate installation.
 
 ------------------------------------------------------------------------
 
-## ⚠️ Important Notes
+##  Important Notes
 
 -   Always **source `setup_environment`** before building or running
     simulations
@@ -166,12 +164,12 @@ No runtime execution is required at this stage to validate installation.
 
 ------------------------------------------------------------------------
 
-## 📚 Reference
+##  Reference
 
 This installation procedure is based on the official GPGPU-Sim
 documentation:
 
-👉 https://github.com/gpgpu-sim/gpgpu-sim_distribution
+ https://github.com/gpgpu-sim/gpgpu-sim_distribution
 
 ------------------------------------------------------------------------
 
