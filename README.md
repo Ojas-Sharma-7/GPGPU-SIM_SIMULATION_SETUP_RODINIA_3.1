@@ -21,7 +21,7 @@ caches, and execution pipelines without requiring physical GPU hardware.
 
 ------------------------------------------------------------------------
 
-## 🖥️ System Requirements
+## System Requirements
 
 -   **Linux OS** (Ubuntu 18.04 / 20.04 / 22.04 recommended)
 -   NVIDIA CUDA Toolkit (version compatible with GPGPU-Sim)
